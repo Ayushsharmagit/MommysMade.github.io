@@ -92,3 +92,14 @@
     
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Load the header.html content into the head section
+    fetch('../utils/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('common-header').innerHTML = data);
+
+    // Load the footer.html content into the footer section
+    fetch('../utils/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('common-footer').innerHTML = data);
+});
