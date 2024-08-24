@@ -102,4 +102,9 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('../utils/footer.html')
         .then(response => response.text())
         .then(data => document.getElementById('common-footer').innerHTML = data);
+    
+    // Load the copyright.html content into the copyright section
+    fetch('../utils/copyright.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('common-copyright').innerHTML = data);
 });
