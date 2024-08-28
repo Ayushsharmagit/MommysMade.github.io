@@ -92,3 +92,29 @@
     
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Load the header.html content into the head section
+    fetch('../utils/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('common-header').innerHTML = data);
+
+    // Load the footer.html content into the footer section
+    fetch('../utils/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('common-footer').innerHTML = data);
+    
+    // Load the copyright.html content into the copyright section
+    fetch('../utils/copyright.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('common-copyright').innerHTML = data);
+
+    // // Load the topbar.html content into the topbar section
+    // fetch('../utils/topbar.html')
+    //     .then(response => response.text())
+    //     .then(data => document.getElementById('common-topbar').innerHTML = data);
+
+    // // Load the navbar.html content into the navbar section
+    // fetch('../utils/navbar.html')
+    //     .then(response => response.text())
+    //     .then(data => document.getElementById('common-navbar').innerHTML = data);
+});
