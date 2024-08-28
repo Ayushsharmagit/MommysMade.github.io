@@ -107,4 +107,14 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('../utils/copyright.html')
         .then(response => response.text())
         .then(data => document.getElementById('common-copyright').innerHTML = data);
+
+    // // Load the topbar.html content into the topbar section
+    // fetch('../utils/topbar.html')
+    //     .then(response => response.text())
+    //     .then(data => document.getElementById('common-topbar').innerHTML = data);
+
+    // // Load the navbar.html content into the navbar section
+    // fetch('../utils/navbar.html')
+    //     .then(response => response.text())
+    //     .then(data => document.getElementById('common-navbar').innerHTML = data);
 });
