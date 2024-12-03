@@ -5,7 +5,7 @@
     --light: #FDF5EB;
     --dark: #1E1916;
 }
-
+    
 h4,
 h5,
 h6,
@@ -86,6 +86,14 @@ h6,
 
 
 /*** Navbar ***/
+.navbar-nav {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -419,3 +427,16 @@ h6,
 .checked {
     color: orange;
   }
+
+.maps-css {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 0rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.flex-spacebetween {
+    justify-content: space-around;
+}
