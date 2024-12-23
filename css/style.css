@@ -48,6 +48,38 @@ h6,
     opacity: 1;
 }
 
+/* Pop up */
+.popup{
+    background-image: url(/img/popup-img/background.jpg);
+    width: 400px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    z-index: 999;
+    height: 500px;
+}
+
+.popup {
+    background-image: url(/img/popup-img/popup.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.popup button{
+    display: block;
+    margin: -6rem -7rem 0 auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
 /*** Button ***/
 .btn {
